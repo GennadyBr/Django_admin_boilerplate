@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  postgres:
+    container_name: postgres
+    image: postgres:16
+    ports:
+      - "5432:5432"
+    volumes:
+      - $HOME/postgresql_16/data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: 123qwe
+      POSTGRES_USER: app
+      POSTGRES_DB: movies_database

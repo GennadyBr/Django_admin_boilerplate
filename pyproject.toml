@@ -17,6 +17,9 @@ fastapi = {extras = ["standard"], version = "^0.115.0"}
 requests = "^2.28.1"
 types-PyYAML = "^6.0.12"
 types-requests = "^2.32"
+psycopg = {extras = ["binary"], version = "^3.1.18"}
+Faker = "^25.0.1"
+django = "^4.2.11"
 
 [tool.poetry.group.dev.dependencies]
 black = "^22.8.0"

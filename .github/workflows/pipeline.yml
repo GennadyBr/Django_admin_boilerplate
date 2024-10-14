@@ -1,4 +1,4 @@
-name: Python Boilerplate
+name: Django PostgresSQL admin boilerplate
 
 on:
   push:

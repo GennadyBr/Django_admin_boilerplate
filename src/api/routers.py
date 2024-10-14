@@ -2,8 +2,17 @@ import requests
 from fastapi import APIRouter
 
 from src.core.logger import logger
+from src.db.fake_data import _create_fake_data
 
 router = APIRouter()
+
+
+@router.get('/create_fake_data')
+async def create_fake_data() -> dict:
+    """Create fake data"""
+    logger.info('Create fake data')
+    await _create_fake_data()
+    return {'message': 'Create fake data'}
 
 
 @router.get('/hello')
