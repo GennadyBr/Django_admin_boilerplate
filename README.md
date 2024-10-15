@@ -20,6 +20,9 @@ docker compose up -d
 python manage.py runserver
 ```
 
+## Django Admin Screen
+![img.png](movies%2Fimg.png)
+
 
 ## Features
 - Django admin with translation;
